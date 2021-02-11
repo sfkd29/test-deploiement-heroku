@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="zxx">
 <head>
@@ -7,7 +8,7 @@
     <title>Upland - Main page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Darker+Grotesque:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">    
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css' %}">
 </head>
 <body class="loaded">
 
@@ -25,7 +26,7 @@
                         </div>
                         <div class="header__inner-col">
                             <a class="header-logo" href="#">
-                                <img class="header-logo__image" src="assets/img/svg/logo.svg" alt="">
+                                <img class="header-logo__image" src="{% static 'assets/img/svg/logo.svg' %}" alt="">
                             </a>
                         </div>
                     </div>
@@ -92,12 +93,12 @@
                             </div>
                         </div>
                         <img class="first-screen__phone" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="https://via.placeholder.com/530x784" alt="" data-lazy-mob>
-                        <img class="first-screen__elements" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/first-screen-elements.svg" alt="" data-lazy-mob>
+                        <img class="first-screen__elements" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/first-screen-elements.svg' %}" alt="" data-lazy-mob>
                     </div>
                 </div>
                 <div class="first-screen__pseudotext" data-title="work faster with powerful tools"></div>
-                <div class="first-screen__bg-1" data-bg="assets/img/first-screen-bg.jpg" data-lazy-mob></div>
-                <div class="first-screen__bg-2" data-bg="assets/img/first-screen-bottom.png" data-lazy-mob></div>
+                <div class="first-screen__bg-1" data-bg="{% static 'assets/img/first-screen-bg.jpg' %}" data-lazy-mob></div>
+                <div class="first-screen__bg-2" data-bg="{% static 'assets/img/first-screen-bottom.png' %}" data-lazy-mob></div>
             </section>
             <!-- FIRST SCREEN END -->
 
@@ -123,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="most-popular__left-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/side-element_2.svg" alt="">
+                    <img class="most-popular__left-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/side-element_2.svg' %}" alt="">
                 </article>
                 <!-- THE MOST POPULAR END -->
 
@@ -163,7 +164,7 @@
                             </article>                                                        
                         </div>
                     </div>
-                    <img class="what-you-get__right-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/side-element_1.svg" alt="">
+                    <img class="what-you-get__right-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/side-element_1.svg' %}" alt="">
                 </section>
                 <!-- WHAT YOU GET END -->
 
@@ -244,8 +245,8 @@
                                     </div>                                
                                 </div>
                                 <div class="ui-slider__bg">
-                                    <img class="ui-slider__bg-left" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/presentation-left.svg" alt="">
-                                    <img class="ui-slider__bg-right" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/presentation-right.svg" alt="">
+                                    <img class="ui-slider__bg-left" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/presentation-left.svg' %}" alt="">
+                                    <img class="ui-slider__bg-right" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/presentation-right.svg' %}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -327,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="downloads-block__right-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/side-element_1.svg" alt="">
+                <img class="downloads-block__right-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/side-element_1.svg' %}" alt="">
             </section>
             <!-- DOWNLOAD END -->
 
@@ -410,7 +411,7 @@
                                         <p class="responses__text js-col">Velit occaecat duis occaecat nostrud. Veniam occaecat id ea Lorem est officia excepteur cupidatat consectetur. Labore do nulla ipsum dolore ipsum. Proident excepteur ex aliqua cupidatat.</p>
                                         <footer class="respondent">
                                             <div class="respondent__col">
-                                                <img class="respondent__image" src="assets/img/author_2.png" alt="">
+                                                <img class="respondent__image" src="{% static 'assets/img/author_2.png' %}" alt="">
                                             </div>
                                             <div class="respondent__col">
                                                 <span class="respondent__name">Brooklyn Simmons</span>
@@ -422,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="responses-block__left-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/side-element_2.svg" alt="">
+                <img class="responses-block__left-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/side-element_2.svg' %}" alt="">
             </div>
             <!-- RESPONSES END -->
 
@@ -431,12 +432,12 @@
                 <div class="trial-block__main wrapper">
                     <div class="trial" id="trial">
                         <div class="trial__bg">
-                            <img class="trial__bg-left" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/trial-left.svg" alt="">
-                            <img class="trial__bg-right" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/trial-right.svg" alt="">
+                            <img class="trial__bg-left" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/trial-left.svg' %}" alt="">
+                            <img class="trial__bg-right" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/trial-right.svg' %}" alt="">
                         </div>
                         <div class="trial__icons-wrap">
                             <span class="trial__pseudotext">Get a free trial for 30 days</span>
-                            <img class="trial__icons" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/trial-icons.svg" alt="">
+                            <img class="trial__icons" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/trial-icons.svg' %}" alt="">
                         </div>
                         <div class="trial__content">
                             <div class="trial__cell">
@@ -450,7 +451,7 @@
                     </div>
                 </div>
                 <div class="trial-block__bg"></div>
-                <img class="trial-block__right-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/side-element_2.svg" alt="">
+                <img class="trial-block__right-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/side-element_2.svg' %}" alt="">
             </section>
             <!-- FREE TRIAL END -->
             
@@ -503,7 +504,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="faq-block__left-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="assets/img/svg/side-element_1.svg" alt="">
+                <img class="faq-block__left-element side-element" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="{% static 'assets/img/svg/side-element_1.svg' %}" alt="">
             </div>
             <!-- FAQ END -->  
             
@@ -749,7 +750,7 @@
                     <span class="copyrights">&copy; All rights reserved. Upland 2020</span>
                 </div>
             </div>  
-            <div class="footer__bg" data-bg="assets/img/footer-bg.png"></div>          
+            <div class="footer__bg" data-bg="{% static 'assets/img/footer-bg.png' %}"></div>          
 
         </footer>
         <!-- FOOTER END -->       
@@ -798,11 +799,11 @@
 	</div>
 	<!-- VIDEO POPUP END -->          
 
-    <script src="assets/js/libs/jquery-3.3.1.min.js"></script> 
-    <script src="assets/js/libs/jquery-migrate-1.4.1.min.js"></script>   
-    <script src="assets/js/components/slick.js"></script>
-    <script src="assets/js/components/fitvids.js"></script>
-    <script src="assets/js/main.js"></script>  
+    <script src="{% static 'assets/js/libs/jquery-3.3.1.min.js' %}"></script> 
+    <script src="{% static 'assets/js/libs/jquery-migrate-1.4.1.min.js' %}"></script>   
+    <script src="{% static 'assets/js/components/slick.js' %}"></script>
+    <script src="{% static 'assets/js/components/fitvids.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>  
 
 </body>
 </html>
