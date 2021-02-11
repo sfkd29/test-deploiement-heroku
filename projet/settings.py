@@ -26,7 +26,7 @@ SECRET_KEY = '%fgp(zal#b8*#g-@8q#x^lp6i+17i6+tl3u+9-u3qp&c%$!bzf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
